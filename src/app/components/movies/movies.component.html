@@ -1,0 +1,53 @@
+<div class="movies-container">
+    <div class="movies">
+        <div *ngFor="let movie of movies" class="movie">
+            <div class="image-container">
+                <img class="image" src="{{movie.image}}" alt="">
+                <div class="imdb-year">
+                    <div class="imdb-container">
+                        <span class="imdb-span"> &nbsp; <img width="30px" src="assets/imdb.png" alt="">&nbsp; </span>
+                       &nbsp; <span>{{movie.imdb}}</span>
+                    </div>
+                    <div class="year-container">
+                        <span>{{movie.releaseDate}}</span>
+                    </div>
+                </div>
+                <div class="movie-title-container">
+                    <div class="movie-title">{{movie.title}}</div>
+                    <div class="button"><i class="ellipsis large vertical icon"></i></div>
+                </div>
+                <div class="overlay-background"></div>
+                <div class="overlay">
+                    <div>
+                        <div class="pg-container">
+                            <span>PG-13</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="quality-container">
+                            <span>HD</span>
+                        </div>
+                    </div>
+                    <div class="play-button">
+                        <i class="play huge circle outline icon"></i>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+
+<!-- <div>
+    <div class="imdb-container">
+        <div>
+            <span class="imdb-span"><img width="30px" src="assets/imdb.png" alt="">&nbsp; </span>
+            <span>{{movie.imdb}}</span>
+        </div>
+    </div>
+</div>
+<div>
+    <div class="year-container">
+        <span>{{movie.releaseDate}}</span>
+    </div>
+</div> -->

@@ -1,0 +1,63 @@
+*{
+    font-family: 'Chakra Petch', sans-serif;
+}
+.carousel{
+    max-width: 700px;
+    z-index: 1;
+}
+.carousel-indicators > li{
+    width: 2vw;
+}
+
+.watch-now{
+    width: 150px;
+    font-size: 17px;
+    padding:12px;
+    cursor:pointer;
+    background-color: #ff4343;
+    border-radius: 20px;
+
+}
+.watch-now:hover{
+    transition: 500ms all;
+    background-color: #da3a3a;
+}
+.title{
+    text-align:left;
+    color: white;
+   
+}
+.buy{
+    font-family: "BPG No9", sans-serif;
+    padding: 2vw;
+    background-color: rgba(0, 0, 0, 0.589);
+    color:white;
+    font-size: 2vw;
+}
+.buy:hover{
+    background-color: black;
+    border-radius: 30px;
+    transition: 1s all;
+}
+.d-block{
+    border-radius: 20px;
+    box-shadow: -200px -9px 146px 5px #242731 inset;
+    -webkit-box-shadow: -200px -9px 146px 5px #242731 inset;
+    -moz-box-shadow: -200px -9px 146px 5px #242731 inset;
+}
+.buttons{
+    height: 50%;
+}
+.d-md-block{
+    height: 80%;
+}
+.genre{
+    font-size: 17px;
+}
+.imdb{
+    font-size: 20px;
+}
+.info{
+    display: flex;
+    justify-content: space-between;
+}
