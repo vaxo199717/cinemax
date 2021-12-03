@@ -8,16 +8,16 @@ import { MovieData } from 'src/app/interfaces/movie-data';
   styleUrls: ['./movies.component.css']
 })
 export class MoviesComponent implements OnInit {
-  movies:MovieData[] = [];
-  constructor(private mainService:MainService) { }
+  movies: MovieData[] = [];
+  constructor(private mainService: MainService) {}
 
   ngOnInit(): void {
-     this.mainService.getData()
-    .subscribe(
-      response => {
-        this.movies = response;
-      }
-    )
+    this.mainService.getData()
+      .subscribe(
+        response => {
+          this.movies = response;
+        }
+      )
   }
 
 }
